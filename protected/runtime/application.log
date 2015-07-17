@@ -1,0 +1,484 @@
+2015/07/17 11:56:52 [error] [exception.CException] exception 'CException' with message 'CWebUser and its behaviors do not have a method or closure named "isGuest".' in D:\OpenServer\domains\forms.lc\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\OpenServer\domains\forms.lc\protected\views\site\index.php(9): CComponent->__call('isGuest', Array)
+#1 D:\OpenServer\domains\forms.lc\protected\views\site\index.php(9): CWebUser->isGuest()
+#2 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(126): require('D:\OpenServer\d...')
+#3 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\OpenServer\d...', NULL, true)
+#4 D:\OpenServer\domains\forms.lc\framework\web\CController.php(869): CBaseController->renderFile('D:\OpenServer\d...', NULL, true)
+#5 D:\OpenServer\domains\forms.lc\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 D:\OpenServer\domains\forms.lc\protected\controllers\SiteController.php(32): CController->render('index')
+#7 D:\OpenServer\domains\forms.lc\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 D:\OpenServer\domains\forms.lc\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\OpenServer\domains\forms.lc\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\OpenServer\domains\forms.lc\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\OpenServer\domains\forms.lc\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 D:\OpenServer\domains\forms.lc\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/
+---
+2015/07/17 11:56:58 [error] [exception.CException] exception 'CException' with message 'CWebUser and its behaviors do not have a method or closure named "isLogin".' in D:\OpenServer\domains\forms.lc\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\OpenServer\domains\forms.lc\protected\views\site\index.php(9): CComponent->__call('isLogin', Array)
+#1 D:\OpenServer\domains\forms.lc\protected\views\site\index.php(9): CWebUser->isLogin()
+#2 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(126): require('D:\OpenServer\d...')
+#3 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\OpenServer\d...', NULL, true)
+#4 D:\OpenServer\domains\forms.lc\framework\web\CController.php(869): CBaseController->renderFile('D:\OpenServer\d...', NULL, true)
+#5 D:\OpenServer\domains\forms.lc\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 D:\OpenServer\domains\forms.lc\protected\controllers\SiteController.php(32): CController->render('index')
+#7 D:\OpenServer\domains\forms.lc\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 D:\OpenServer\domains\forms.lc\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\OpenServer\domains\forms.lc\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\OpenServer\domains\forms.lc\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\OpenServer\domains\forms.lc\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 D:\OpenServer\domains\forms.lc\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/
+---
+2015/07/17 12:16:22 [error] [exception.CException] exception 'CException' with message 'WebUser and its behaviors do not have a method or closure named "isGuest".' in D:\OpenServer\domains\forms.lc\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\OpenServer\domains\forms.lc\protected\views\site\index.php(9): CComponent->__call('isGuest', Array)
+#1 D:\OpenServer\domains\forms.lc\protected\views\site\index.php(9): WebUser->isGuest()
+#2 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(126): require('D:\OpenServer\d...')
+#3 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\OpenServer\d...', NULL, true)
+#4 D:\OpenServer\domains\forms.lc\framework\web\CController.php(869): CBaseController->renderFile('D:\OpenServer\d...', NULL, true)
+#5 D:\OpenServer\domains\forms.lc\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 D:\OpenServer\domains\forms.lc\protected\controllers\SiteController.php(32): CController->render('index')
+#7 D:\OpenServer\domains\forms.lc\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 D:\OpenServer\domains\forms.lc\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\OpenServer\domains\forms.lc\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\OpenServer\domains\forms.lc\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\OpenServer\domains\forms.lc\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 D:\OpenServer\domains\forms.lc\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/
+---
+2015/07/17 12:16:23 [error] [exception.CException] exception 'CException' with message 'WebUser and its behaviors do not have a method or closure named "isGuest".' in D:\OpenServer\domains\forms.lc\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\OpenServer\domains\forms.lc\protected\views\site\index.php(9): CComponent->__call('isGuest', Array)
+#1 D:\OpenServer\domains\forms.lc\protected\views\site\index.php(9): WebUser->isGuest()
+#2 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(126): require('D:\OpenServer\d...')
+#3 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\OpenServer\d...', NULL, true)
+#4 D:\OpenServer\domains\forms.lc\framework\web\CController.php(869): CBaseController->renderFile('D:\OpenServer\d...', NULL, true)
+#5 D:\OpenServer\domains\forms.lc\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 D:\OpenServer\domains\forms.lc\protected\controllers\SiteController.php(32): CController->render('index')
+#7 D:\OpenServer\domains\forms.lc\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 D:\OpenServer\domains\forms.lc\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\OpenServer\domains\forms.lc\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\OpenServer\domains\forms.lc\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\OpenServer\domains\forms.lc\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 D:\OpenServer\domains\forms.lc\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/
+---
+2015/07/17 12:16:42 [error] [exception.CException] exception 'CException' with message 'WebUser and its behaviors do not have a method or closure named "isGuest".' in D:\OpenServer\domains\forms.lc\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\OpenServer\domains\forms.lc\protected\views\site\index.php(9): CComponent->__call('isGuest', Array)
+#1 D:\OpenServer\domains\forms.lc\protected\views\site\index.php(9): WebUser->isGuest()
+#2 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(126): require('D:\OpenServer\d...')
+#3 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\OpenServer\d...', NULL, true)
+#4 D:\OpenServer\domains\forms.lc\framework\web\CController.php(869): CBaseController->renderFile('D:\OpenServer\d...', NULL, true)
+#5 D:\OpenServer\domains\forms.lc\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 D:\OpenServer\domains\forms.lc\protected\controllers\SiteController.php(32): CController->render('index')
+#7 D:\OpenServer\domains\forms.lc\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 D:\OpenServer\domains\forms.lc\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\OpenServer\domains\forms.lc\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\OpenServer\domains\forms.lc\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\OpenServer\domains\forms.lc\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 D:\OpenServer\domains\forms.lc\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/
+---
+2015/07/17 12:17:28 [error] [exception.CException] exception 'CException' with message 'WebUser and its behaviors do not have a method or closure named "isGuest".' in D:\OpenServer\domains\forms.lc\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\OpenServer\domains\forms.lc\protected\views\site\index.php(9): CComponent->__call('isGuest', Array)
+#1 D:\OpenServer\domains\forms.lc\protected\views\site\index.php(9): WebUser->isGuest()
+#2 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(126): require('D:\OpenServer\d...')
+#3 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\OpenServer\d...', NULL, true)
+#4 D:\OpenServer\domains\forms.lc\framework\web\CController.php(869): CBaseController->renderFile('D:\OpenServer\d...', NULL, true)
+#5 D:\OpenServer\domains\forms.lc\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 D:\OpenServer\domains\forms.lc\protected\controllers\SiteController.php(32): CController->render('index')
+#7 D:\OpenServer\domains\forms.lc\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 D:\OpenServer\domains\forms.lc\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\OpenServer\domains\forms.lc\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\OpenServer\domains\forms.lc\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\OpenServer\domains\forms.lc\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 D:\OpenServer\domains\forms.lc\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/
+---
+2015/07/17 12:58:28 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'login' in 'where clause'. The SQL statement executed was: SELECT * FROM `User` `t` WHERE LOWER(login)=? LIMIT 1.
+in D:\OpenServer\domains\forms.lc\protected\components\UserIdentity.php (15)
+in D:\OpenServer\domains\forms.lc\protected\models\LoginForm.php (52)
+in D:\OpenServer\domains\forms.lc\protected\controllers\SiteController.php (94)
+2015/07/17 12:58:28 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'login' in 'where clause'. The SQL statement executed was: SELECT * FROM `User` `t` WHERE LOWER(login)=? LIMIT 1' in D:\OpenServer\domains\forms.lc\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\OpenServer\domains\forms.lc\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\OpenServer\domains\forms.lc\framework\db\ar\CActiveRecord.php(1356): CDbCommand->queryRow()
+#2 D:\OpenServer\domains\forms.lc\framework\db\ar\CActiveRecord.php(1461): CActiveRecord->query(Object(CDbCriteria))
+#3 D:\OpenServer\domains\forms.lc\protected\components\UserIdentity.php(15): CActiveRecord->find('LOWER(login)=?', Array)
+#4 D:\OpenServer\domains\forms.lc\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#5 D:\OpenServer\domains\forms.lc\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#6 D:\OpenServer\domains\forms.lc\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#7 D:\OpenServer\domains\forms.lc\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#8 D:\OpenServer\domains\forms.lc\protected\controllers\SiteController.php(94): CModel->validate()
+#9 D:\OpenServer\domains\forms.lc\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#10 D:\OpenServer\domains\forms.lc\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\OpenServer\domains\forms.lc\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 D:\OpenServer\domains\forms.lc\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(282): CController->run('login')
+#14 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#15 D:\OpenServer\domains\forms.lc\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#16 D:\OpenServer\domains\forms.lc\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://forms.lc/index.php?r=site/login
+---
+2015/07/17 12:58:59 [error] [exception.CException] exception 'CException' with message 'Property "User.realName" is not defined.' in D:\OpenServer\domains\forms.lc\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\OpenServer\domains\forms.lc\framework\db\ar\CActiveRecord.php(145): CComponent->__get('realName')
+#1 D:\OpenServer\domains\forms.lc\protected\components\UserIdentity.php(28): CActiveRecord->__get('realName')
+#2 D:\OpenServer\domains\forms.lc\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 D:\OpenServer\domains\forms.lc\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 D:\OpenServer\domains\forms.lc\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 D:\OpenServer\domains\forms.lc\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 D:\OpenServer\domains\forms.lc\protected\controllers\SiteController.php(94): CModel->validate()
+#7 D:\OpenServer\domains\forms.lc\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 D:\OpenServer\domains\forms.lc\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\OpenServer\domains\forms.lc\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\OpenServer\domains\forms.lc\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(282): CController->run('login')
+#12 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 D:\OpenServer\domains\forms.lc\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 D:\OpenServer\domains\forms.lc\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://forms.lc/index.php?r=site/login
+---
+2015/07/17 12:59:37 [error] [exception.CException] exception 'CException' with message 'Property "User.realName" is not defined.' in D:\OpenServer\domains\forms.lc\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\OpenServer\domains\forms.lc\framework\db\ar\CActiveRecord.php(145): CComponent->__get('realName')
+#1 D:\OpenServer\domains\forms.lc\protected\components\UserIdentity.php(28): CActiveRecord->__get('realName')
+#2 D:\OpenServer\domains\forms.lc\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 D:\OpenServer\domains\forms.lc\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 D:\OpenServer\domains\forms.lc\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 D:\OpenServer\domains\forms.lc\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 D:\OpenServer\domains\forms.lc\protected\controllers\SiteController.php(94): CModel->validate()
+#7 D:\OpenServer\domains\forms.lc\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 D:\OpenServer\domains\forms.lc\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\OpenServer\domains\forms.lc\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\OpenServer\domains\forms.lc\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(282): CController->run('login')
+#12 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 D:\OpenServer\domains\forms.lc\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 D:\OpenServer\domains\forms.lc\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://forms.lc/index.php?r=site/login
+---
+2015/07/17 12:59:44 [error] [exception.CException] exception 'CException' with message 'Property "User.realName" is not defined.' in D:\OpenServer\domains\forms.lc\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\OpenServer\domains\forms.lc\framework\db\ar\CActiveRecord.php(145): CComponent->__get('realName')
+#1 D:\OpenServer\domains\forms.lc\protected\components\UserIdentity.php(28): CActiveRecord->__get('realName')
+#2 D:\OpenServer\domains\forms.lc\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 D:\OpenServer\domains\forms.lc\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 D:\OpenServer\domains\forms.lc\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 D:\OpenServer\domains\forms.lc\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 D:\OpenServer\domains\forms.lc\protected\controllers\SiteController.php(94): CModel->validate()
+#7 D:\OpenServer\domains\forms.lc\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 D:\OpenServer\domains\forms.lc\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\OpenServer\domains\forms.lc\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\OpenServer\domains\forms.lc\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(282): CController->run('login')
+#12 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 D:\OpenServer\domains\forms.lc\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 D:\OpenServer\domains\forms.lc\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://forms.lc/index.php?r=site/login
+---
+2015/07/17 13:21:40 [error] [exception.CException] exception 'CException' with message 'Property "WebUser.login" is not defined.' in D:\OpenServer\domains\forms.lc\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\OpenServer\domains\forms.lc\framework\web\auth\CWebUser.php(146): CComponent->__get('login')
+#1 D:\OpenServer\domains\forms.lc\protected\views\layouts\main.php(35): CWebUser->__get('login')
+#2 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(126): require('D:\OpenServer\d...')
+#3 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\OpenServer\d...', Array, true)
+#4 D:\OpenServer\domains\forms.lc\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\OpenServer\d...', Array, true)
+#5 D:\OpenServer\domains\forms.lc\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 D:\OpenServer\domains\forms.lc\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(214): COutputProcessor->run()
+#8 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#9 D:\OpenServer\domains\forms.lc\protected\views\layouts\column1.php(8): CBaseController->endContent()
+#10 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(126): require('D:\OpenServer\d...')
+#11 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\OpenServer\d...', Array, true)
+#12 D:\OpenServer\domains\forms.lc\framework\web\CController.php(784): CBaseController->renderFile('D:\OpenServer\d...', Array, true)
+#13 D:\OpenServer\domains\forms.lc\protected\controllers\SiteController.php(32): CController->render('index')
+#14 D:\OpenServer\domains\forms.lc\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#15 D:\OpenServer\domains\forms.lc\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 D:\OpenServer\domains\forms.lc\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 D:\OpenServer\domains\forms.lc\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(282): CController->run('')
+#19 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#20 D:\OpenServer\domains\forms.lc\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 D:\OpenServer\domains\forms.lc\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/
+---
+2015/07/17 13:26:05 [error] [exception.CException] exception 'CException' with message 'WebUser and its behaviors do not have a method or closure named "getmodel".' in D:\OpenServer\domains\forms.lc\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\OpenServer\domains\forms.lc\framework\base\CComponent.php(111): CComponent->__call('getmodel', Array)
+#1 D:\OpenServer\domains\forms.lc\framework\base\CComponent.php(111): WebUser->getmodel()
+#2 D:\OpenServer\domains\forms.lc\framework\web\auth\CWebUser.php(146): CComponent->__get('model')
+#3 D:\OpenServer\domains\forms.lc\protected\views\layouts\main.php(59): CWebUser->__get('model')
+#4 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(126): require('D:\OpenServer\d...')
+#5 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\OpenServer\d...', Array, true)
+#6 D:\OpenServer\domains\forms.lc\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\OpenServer\d...', Array, true)
+#7 D:\OpenServer\domains\forms.lc\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 D:\OpenServer\domains\forms.lc\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(214): COutputProcessor->run()
+#10 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#11 D:\OpenServer\domains\forms.lc\protected\views\layouts\column1.php(8): CBaseController->endContent()
+#12 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(126): require('D:\OpenServer\d...')
+#13 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\OpenServer\d...', Array, true)
+#14 D:\OpenServer\domains\forms.lc\framework\web\CController.php(784): CBaseController->renderFile('D:\OpenServer\d...', Array, true)
+#15 D:\OpenServer\domains\forms.lc\protected\controllers\SiteController.php(32): CController->render('index')
+#16 D:\OpenServer\domains\forms.lc\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 D:\OpenServer\domains\forms.lc\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 D:\OpenServer\domains\forms.lc\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 D:\OpenServer\domains\forms.lc\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(282): CController->run('')
+#21 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 D:\OpenServer\domains\forms.lc\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#23 D:\OpenServer\domains\forms.lc\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/
+---
+2015/07/17 13:26:17 [error] [exception.CException] exception 'CException' with message 'WebUser and its behaviors do not have a method or closure named "getModel".' in D:\OpenServer\domains\forms.lc\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\OpenServer\domains\forms.lc\framework\base\CComponent.php(111): CComponent->__call('getModel', Array)
+#1 D:\OpenServer\domains\forms.lc\framework\base\CComponent.php(111): WebUser->getModel()
+#2 D:\OpenServer\domains\forms.lc\framework\web\auth\CWebUser.php(146): CComponent->__get('Model')
+#3 D:\OpenServer\domains\forms.lc\protected\views\layouts\main.php(59): CWebUser->__get('Model')
+#4 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(126): require('D:\OpenServer\d...')
+#5 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\OpenServer\d...', Array, true)
+#6 D:\OpenServer\domains\forms.lc\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\OpenServer\d...', Array, true)
+#7 D:\OpenServer\domains\forms.lc\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 D:\OpenServer\domains\forms.lc\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(214): COutputProcessor->run()
+#10 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#11 D:\OpenServer\domains\forms.lc\protected\views\layouts\column1.php(8): CBaseController->endContent()
+#12 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(126): require('D:\OpenServer\d...')
+#13 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\OpenServer\d...', Array, true)
+#14 D:\OpenServer\domains\forms.lc\framework\web\CController.php(784): CBaseController->renderFile('D:\OpenServer\d...', Array, true)
+#15 D:\OpenServer\domains\forms.lc\protected\controllers\SiteController.php(32): CController->render('index')
+#16 D:\OpenServer\domains\forms.lc\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 D:\OpenServer\domains\forms.lc\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 D:\OpenServer\domains\forms.lc\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 D:\OpenServer\domains\forms.lc\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(282): CController->run('')
+#21 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 D:\OpenServer\domains\forms.lc\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#23 D:\OpenServer\domains\forms.lc\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/
+---
+2015/07/17 13:26:29 [error] [exception.CException] exception 'CException' with message 'Property "WebUser.getModel" is not defined.' in D:\OpenServer\domains\forms.lc\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\OpenServer\domains\forms.lc\framework\web\auth\CWebUser.php(146): CComponent->__get('getModel')
+#1 D:\OpenServer\domains\forms.lc\protected\views\layouts\main.php(59): CWebUser->__get('getModel')
+#2 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(126): require('D:\OpenServer\d...')
+#3 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\OpenServer\d...', Array, true)
+#4 D:\OpenServer\domains\forms.lc\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\OpenServer\d...', Array, true)
+#5 D:\OpenServer\domains\forms.lc\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 D:\OpenServer\domains\forms.lc\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(214): COutputProcessor->run()
+#8 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#9 D:\OpenServer\domains\forms.lc\protected\views\layouts\column1.php(8): CBaseController->endContent()
+#10 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(126): require('D:\OpenServer\d...')
+#11 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\OpenServer\d...', Array, true)
+#12 D:\OpenServer\domains\forms.lc\framework\web\CController.php(784): CBaseController->renderFile('D:\OpenServer\d...', Array, true)
+#13 D:\OpenServer\domains\forms.lc\protected\controllers\SiteController.php(32): CController->render('index')
+#14 D:\OpenServer\domains\forms.lc\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#15 D:\OpenServer\domains\forms.lc\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 D:\OpenServer\domains\forms.lc\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 D:\OpenServer\domains\forms.lc\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(282): CController->run('')
+#19 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#20 D:\OpenServer\domains\forms.lc\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 D:\OpenServer\domains\forms.lc\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/
+---
+2015/07/17 13:26:33 [error] [exception.CException] exception 'CException' with message 'WebUser and its behaviors do not have a method or closure named "getModel".' in D:\OpenServer\domains\forms.lc\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\OpenServer\domains\forms.lc\protected\views\layouts\main.php(59): CComponent->__call('getModel', Array)
+#1 D:\OpenServer\domains\forms.lc\protected\views\layouts\main.php(59): WebUser->getModel()
+#2 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(126): require('D:\OpenServer\d...')
+#3 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\OpenServer\d...', Array, true)
+#4 D:\OpenServer\domains\forms.lc\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\OpenServer\d...', Array, true)
+#5 D:\OpenServer\domains\forms.lc\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 D:\OpenServer\domains\forms.lc\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(214): COutputProcessor->run()
+#8 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#9 D:\OpenServer\domains\forms.lc\protected\views\layouts\column1.php(8): CBaseController->endContent()
+#10 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(126): require('D:\OpenServer\d...')
+#11 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\OpenServer\d...', Array, true)
+#12 D:\OpenServer\domains\forms.lc\framework\web\CController.php(784): CBaseController->renderFile('D:\OpenServer\d...', Array, true)
+#13 D:\OpenServer\domains\forms.lc\protected\controllers\SiteController.php(32): CController->render('index')
+#14 D:\OpenServer\domains\forms.lc\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#15 D:\OpenServer\domains\forms.lc\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 D:\OpenServer\domains\forms.lc\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 D:\OpenServer\domains\forms.lc\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(282): CController->run('')
+#19 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#20 D:\OpenServer\domains\forms.lc\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 D:\OpenServer\domains\forms.lc\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/
+---
+2015/07/17 13:37:47 [error] [php] include(echoYii.php): failed to open stream: No such file or directory (D:\OpenServer\domains\forms.lc\framework\YiiBase.php:432)
+Stack trace:
+#0 D:\OpenServer\domains\forms.lc\protected\views\layouts\main.php(40): spl_autoload_call()
+#1 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(126): require()
+#2 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#3 D:\OpenServer\domains\forms.lc\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#4 D:\OpenServer\domains\forms.lc\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#5 D:\OpenServer\domains\forms.lc\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#6 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(214): CContentDecorator->run()
+#7 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(308): SiteController->endWidget()
+#8 D:\OpenServer\domains\forms.lc\protected\views\layouts\column1.php(8): SiteController->endContent()
+#9 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(126): require()
+#10 D:\OpenServer\domains\forms.lc\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#11 D:\OpenServer\domains\forms.lc\framework\web\CController.php(784): SiteController->renderFile()
+#12 D:\OpenServer\domains\forms.lc\protected\controllers\SiteController.php(32): SiteController->render()
+#13 D:\OpenServer\domains\forms.lc\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#14 D:\OpenServer\domains\forms.lc\framework\web\CController.php(308): CInlineAction->runWithParams()
+#15 D:\OpenServer\domains\forms.lc\framework\web\CController.php(286): SiteController->runAction()
+#16 D:\OpenServer\domains\forms.lc\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#17 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(282): SiteController->run()
+#18 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#19 D:\OpenServer\domains\forms.lc\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#20 D:\OpenServer\domains\forms.lc\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in D:\OpenServer\domains\forms.lc\protected\views\layouts\main.php (40)
+in D:\OpenServer\domains\forms.lc\protected\views\layouts\column1.php (8)
+in D:\OpenServer\domains\forms.lc\protected\controllers\SiteController.php (32)
+2015/07/17 16:12:55 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "CreateForm".' in D:\OpenServer\domains\forms.lc\framework\web\CController.php:878
+Stack trace:
+#0 D:\OpenServer\domains\forms.lc\framework\web\CController.php(782): CController->renderPartial('CreateForm', NULL, true)
+#1 D:\OpenServer\domains\forms.lc\protected\controllers\SiteController.php(51): CController->render('CreateForm')
+#2 D:\OpenServer\domains\forms.lc\framework\web\actions\CInlineAction.php(49): SiteController->actionCreateForm()
+#3 D:\OpenServer\domains\forms.lc\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\OpenServer\domains\forms.lc\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\OpenServer\domains\forms.lc\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(282): CController->run('CreateForm')
+#7 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(141): CWebApplication->runController('site/CreateForm')
+#8 D:\OpenServer\domains\forms.lc\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 D:\OpenServer\domains\forms.lc\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php?r=site/CreateForm
+---
+2015/07/17 16:36:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\forms.lc\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\forms.lc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://forms.lc/site/CreateForm
+---
+2015/07/17 16:44:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(141): CWebApplication->runController('gii')
+#1 D:\OpenServer\domains\forms.lc\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\forms.lc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/07/17 16:47:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "create".' in D:\OpenServer\domains\forms.lc\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\forms.lc\framework\web\CController.php(270): CController->missingAction('create')
+#1 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(282): CController->run('create')
+#2 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(141): CWebApplication->runController('documents/creat...')
+#3 D:\OpenServer\domains\forms.lc\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\forms.lc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/documents/create
+---
+2015/07/17 16:48:58 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\OpenServer\domains\forms.lc\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\OpenServer\domains\forms.lc\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 D:\OpenServer\domains\forms.lc\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\OpenServer\domains\forms.lc\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\OpenServer\domains\forms.lc\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\OpenServer\domains\forms.lc\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\OpenServer\domains\forms.lc\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\OpenServer\domains\forms.lc\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(141): CWebApplication->runController('documents/admin')
+#9 D:\OpenServer\domains\forms.lc\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\OpenServer\domains\forms.lc\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/documents/admin
+---
+2015/07/17 16:49:29 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\OpenServer\domains\forms.lc\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\OpenServer\domains\forms.lc\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 D:\OpenServer\domains\forms.lc\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\OpenServer\domains\forms.lc\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\OpenServer\domains\forms.lc\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\OpenServer\domains\forms.lc\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\OpenServer\domains\forms.lc\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\OpenServer\domains\forms.lc\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(141): CWebApplication->runController('documents/admin')
+#9 D:\OpenServer\domains\forms.lc\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\OpenServer\domains\forms.lc\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/documents/admin
+---
+2015/07/17 16:49:30 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\OpenServer\domains\forms.lc\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\OpenServer\domains\forms.lc\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 D:\OpenServer\domains\forms.lc\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\OpenServer\domains\forms.lc\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\OpenServer\domains\forms.lc\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\OpenServer\domains\forms.lc\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\OpenServer\domains\forms.lc\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\OpenServer\domains\forms.lc\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(141): CWebApplication->runController('documents/admin')
+#9 D:\OpenServer\domains\forms.lc\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\OpenServer\domains\forms.lc\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/documents/admin
+---
+2015/07/17 17:39:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\forms.lc\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\forms.lc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://forms.lc/documents/create
+---
+2015/07/17 17:39:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\forms.lc\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\OpenServer\domains\forms.lc\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\forms.lc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://forms.lc/documents/create
+---
