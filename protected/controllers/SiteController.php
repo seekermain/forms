@@ -77,6 +77,7 @@ class SiteController extends Controller
 	 */
 	public function actionLogin()
 	{
+		$this->pageTitle = 'Авторизация';
 		$model=new LoginForm;
 
 		// if it is ajax validation request

@@ -2966,3 +2966,12 @@ in D:\WWW\forms.lc\index.php (13)
 2015/07/19 17:53:48 [warning] [application] Failed to set unsafe attribute "sate" of "Documents".
 in D:\WWW\forms.lc\protected\controllers\DocumentsController.php (104)
 in D:\WWW\forms.lc\index.php (13)
+2015/07/19 21:56:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\WWW\forms.lc\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\WWW\forms.lc\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\WWW\forms.lc\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\WWW\forms.lc\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://forms.lc/site/login
+---
