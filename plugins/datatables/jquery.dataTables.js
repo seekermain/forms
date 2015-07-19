@@ -1699,12 +1699,12 @@
 					nTmp = _fnFeatureHtmlLength( oSettings );
 					iPushFeature = 1;
 				}
-				else if ( cOption == 'f' && oSettings.oFeatures.bFilter )
-				{
-					/* Filter */
-					nTmp = _fnFeatureHtmlFilter( oSettings );
-					iPushFeature = 1;
-				}
+				// else if ( cOption == 'f' && oSettings.oFeatures.bFilter )
+				// {
+				// 	 Filter 
+				// 	nTmp = _fnFeatureHtmlFilter( oSettings );
+				// 	iPushFeature = 1;
+				// }
 				else if ( cOption == 'r' && oSettings.oFeatures.bProcessing )
 				{
 					/* pRocessing */
@@ -2711,7 +2711,7 @@
 			 * sZeroRecords - assuming that is given.
 			 */
 			if ( !oLanguage.sEmptyTable && oLanguage.sZeroRecords &&
-				oDefaults.sEmptyTable === "No data available in table" )
+				oDefaults.sEmptyTable === "Нет данных для отображения" )
 			{
 				_fnMap( oLanguage, oLanguage, 'sZeroRecords', 'sEmptyTable' );
 			}
@@ -9224,7 +9224,7 @@
 				 *      } );
 				 *    } );
 				 */
-				"sNext": "Next",
+				"sNext": "Следующая",
 			
 			
 				/**
@@ -9245,7 +9245,7 @@
 				 *      } );
 				 *    } );
 				 */
-				"sPrevious": "Previous"
+				"sPrevious": "Предыдущая"
 			},
 		
 			/**
@@ -9254,19 +9254,19 @@
 			 * parameter - if it is not given, the value of sZeroRecords will be used
 			 * instead (either the default or given value).
 			 *  @type string
-			 *  @default No data available in table
+			 *  @default Нет данных для отображения
 			 *  @dtopt Language
 			 * 
 			 *  @example
 			 *    $(document).ready( function() {
 			 *      $('#example').dataTable( {
 			 *        "oLanguage": {
-			 *          "sEmptyTable": "No data available in table"
+			 *          "sEmptyTable": "Нет данных для отображения"
 			 *        }
 			 *      } );
 			 *    } );
 			 */
-			"sEmptyTable": "No data available in table",
+			"sEmptyTable": "Нет данных для отображения",
 		
 		
 			/**
@@ -9287,7 +9287,7 @@
 			 *      } );
 			 *    } );
 			 */
-			"sInfo": "Showing _START_ to _END_ of _TOTAL_ entries",
+			"sInfo": "Показано от _START_ до _END_ из _TOTAL_ записей",
 		
 		
 			/**
@@ -9306,7 +9306,7 @@
 			 *      } );
 			 *    } );
 			 */
-			"sInfoEmpty": "Showing 0 to 0 of 0 entries",
+			"sInfoEmpty": "Показано от 0 до 0 из 0 записей",
 		
 		
 			/**

@@ -79,7 +79,7 @@ a.show-sidebar:hover {
   position: relative;
   z-index: 10;
   background: #EBEBEB;
-  box-shadow: 0 0 6px #131313;
+  /*box-shadow: 0 0 6px #131313;*/
   padding-bottom: 3000px !important;
   margin-bottom: -2980px !important;
   overflow: hidden;
@@ -354,7 +354,7 @@ a.show-sidebar:hover {
   line-height: 28px;
 }
 .box-name:hover {
-  cursor: move;
+  /*cursor: move;*/
 }
 .box-name > i {
   margin-right:5px;
@@ -2202,6 +2202,20 @@ td.beauty-hover {
   overflow: hidden;
   padding: 15px;
   background: #FCFCFC;
+}
+#modalbox .devoops-modal-note {
+  position: relative;
+  overflow: hidden;
+  padding: 15px;
+  background: #FCFCFC;
+}
+.devoops-modal-note span.error
+{
+  color: red;
+}
+.devoops-modal-note span.success
+{
+  color: green;
 }
 #modalbox .devoops-modal-bottom {
   position: relative;

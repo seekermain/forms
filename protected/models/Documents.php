@@ -34,7 +34,7 @@ class Documents extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('user_id, name, city, area, amount, contribution, need, analysis, datetime, state', 'required'),
+			array('name, city, area, amount, contribution, need, analysis, state', 'required'),
 			array('name, city, area', 'length', 'max'=>200),
 			array('amount, contribution, need', 'length', 'max'=>50),
 			array('state', 'length', 'max'=>7),
@@ -52,6 +52,7 @@ class Documents extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'reqs' => array(self::HAS_MANY, 'Requests', 'id'),
 		);
 	}
 
@@ -61,17 +62,17 @@ class Documents extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'ID',
-			'user_id' => 'User',
-			'name' => 'Name',
-			'city' => 'City',
-			'area' => 'Area',
-			'amount' => 'Amount',
-			'contribution' => 'Contribution',
-			'need' => 'Need',
-			'analysis' => 'Analysis',
-			'datetime' => 'Datetime',
-			'state' => 'State',
+			'id' => 'Номер заявки',
+			'user_id' => 'ID пользователя',
+			'name' => 'Название заявки',
+			'city' => 'Город',
+			'area' => 'Район',
+			'amount' => 'Стоимость',
+			'contribution' => 'Совклад',
+			'need' => 'Потребность',
+			'analysis' => 'Анализ',
+			'datetime' => 'Время создания',
+			'state' => 'Статус',
 		);
 	}
 
@@ -127,7 +128,18 @@ class Documents extends CActiveRecord
 		{
 			$this->user_id = Yii::app()->user->id;
 			$this->datetime = date("Y-m-d H:i:s");
+			$this->state = 'Save';
 		}
 		return parent::beforeSave();
+	}
+
+	public function translateState($param)
+	{
+		$translates = array(
+			'Save' => 'Сохранено',
+			'Inquiry' => 'Запрашивается изменение',
+			'Access' => 'Изменение разрешено',
+			);
+		return $translates[$param];
 	}
 }

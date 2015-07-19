@@ -7,6 +7,21 @@
 
 <div class="box">
 	<div class="box-content">
+		<div class="text-center">
+			<h3 class="page-header">Форма заявки</h3>
+			<p class="note">Поля отмеченные <span class="required">*</span> обязательны для заполнения.</p>
+		</div>
+	<?php if(!$model->isNewRecord):?>
+		<div class="form-group col-sm-6">
+		<label class="control-label required"><?php echo $model->getAttributeLabel('id');?></label>
+			<input class="form-control" type="text" value="<?php echo $model->id?>" disabled='true'>
+		</div>
+		
+		<div class="form-group col-sm-6">
+		<label class="control-label required"><?php echo $model->getAttributeLabel('datetime');?></label>
+			<input class="form-control" type="text" value="<?php echo $model->datetime?>" disabled='true'>
+		</div>
+	<?php endif;?>
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'documents-form',
 	// Please note: When you enable ajax validation, make sure the corresponding
@@ -15,11 +30,6 @@
 	// See class documentation of CActiveForm for details on this.
 	'enableAjaxValidation'=>false,
 )); ?>
-
-	<div class="text-center">
-		<h3 class="page-header">Форма заявки</h3>
-		<p class="note">Поля отмеченные <span class="required">*</span> обязательны для заполнения.</p>
-	</div>
 
 	<?php //echo $form->errorSummary($model); ?>
 
@@ -66,9 +76,10 @@
 		<?php echo $form->error($model,'analysis',array('style'=>'color:red')); ?>
 	</div>
 	
-	
+	<legend></legend>
 	<div class="text-center">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Создать заявку' : 'СОхранить изменения',array('class'=>'btn btn-primary')); ?>
+			<?php echo CHtml::submitButton($model->isNewRecord ? 'Создать заявку' : 'Сохранить изменения',array('class'=>'btn btn-success')); ?>
+			<a href="<?php echo Yii::app()->request->getBaseUrl(true);?>" class="btn btn-danger" style="margin-left: 100px;">Закрыть форму</a>
 	</div>
 
 <?php $this->endWidget(); ?>

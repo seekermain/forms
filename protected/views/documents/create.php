@@ -13,6 +13,6 @@ $this->menu=array(
 );
 ?>
 
-<h1 style="margin-left: 10px; margin-bottom: 12px;">Create Documents</h1>
+<h1 style="margin-left: 10px; margin-bottom: 12px;">Создание заявки</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

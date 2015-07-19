@@ -46,11 +46,6 @@ class SiteController extends Controller
 		}
 	}
 
-	public function actionCreateForm()
-	{
-		$this->render('CreateForm');
-	}
-
 	/**
 	 * Displays the contact page
 	 */

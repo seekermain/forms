@@ -130,7 +130,7 @@ class CUniqueValidator extends CValidator
 
 		if($exists)
 		{
-			$message=$this->message!==null?$this->message:Yii::t('yii','{attribute} "{value}" has already been taken.');
+			$message=$this->message!==null?$this->message:Yii::t('yii','{attribute} "{value}" уже существует');
 			$this->addError($object,$attribute,$message,array('{value}'=>CHtml::encode($value)));
 		}
 	}

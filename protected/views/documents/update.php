@@ -16,6 +16,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Update Documents <?php echo $model->id; ?></h1>
+<h1>Правка заявки №<?php echo $model->id; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

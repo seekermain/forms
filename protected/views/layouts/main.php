@@ -28,7 +28,7 @@
 				<div class="row">
 					<div class="col-xs-8 col-sm-4">
 						<ul class="nav navbar-nav">
-							<li><a href="<?php echo Yii::app()->request->getBaseUrl(true);?>">Заявки</a></li>
+							<li><a href="<?php echo Yii::app()->request->getBaseUrl(true);?>">Все заявки</a></li>
 						</ul>
 					</div>
 					<div class="col-xs-4 col-sm-8 top-panel-right">
@@ -42,6 +42,20 @@
 									</div>
 								</a>
 								<ul class="dropdown-menu">
+									<?php if(Yii::app()->user->role=='administrator'):?>
+									<li>
+										<a href="<?php echo Yii::app()->createUrl('requests/admin');?>">
+											<i class="fa fa-bars"></i>
+											<span>Запросы на изменение заявок</span>
+										</a>
+									</li>
+									<li>
+										<a href="<?php echo Yii::app()->createUrl('user/admin');?>">
+											<i class="fa fa-users"></i>
+											<span>Пользователи</span>
+										</a>
+									</li>
+									<?php endif;?>
 									<li>
 										<a href="<?php echo Yii::app()->createUrl('site/logout');?>">
 											<i class="fa fa-power-off"></i>

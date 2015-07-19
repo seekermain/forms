@@ -3,14 +3,15 @@
 /* @var $data Documents */
 ?>
 
+							<?php /*
 <div class="view">
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('id')); ?>:</b>
 	<?php echo CHtml::link(CHtml::encode($data->id), array('view', 'id'=>$data->id)); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('user_id')); ?>:</b>
-	<?php echo CHtml::encode($data->user_id); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('datetime')); ?>:</b>
+	<?php echo CHtml::encode($data->datetime); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('name')); ?>:</b>
@@ -33,23 +34,23 @@
 	<?php echo CHtml::encode($data->contribution); ?>
 	<br />
 
-	<?php /*
-	<b><?php echo CHtml::encode($data->getAttributeLabel('need')); ?>:</b>
-	<?php echo CHtml::encode($data->need); ?>
-	<br />
-
 	<b><?php echo CHtml::encode($data->getAttributeLabel('analysis')); ?>:</b>
 	<?php echo CHtml::encode($data->analysis); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('datetime')); ?>:</b>
-	<?php echo CHtml::encode($data->datetime); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('need')); ?>:</b>
+	<?php echo CHtml::encode($data->need); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('state')); ?>:</b>
 	<?php echo CHtml::encode($data->state); ?>
 	<br />
+	
+	<b><?php echo CHtml::encode($data->getAttributeLabel('user_id')); ?>:</b>
+	<?php echo CHtml::encode($data->user_id); ?>
+	<br />
 
-	*/ ?>
+	
 
 </div>
+*/ ?>

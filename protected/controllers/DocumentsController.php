@@ -2,6 +2,7 @@
 
 class DocumentsController extends Controller
 {
+	public $pageTitle = 'Заявки';
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
@@ -51,9 +52,10 @@ class DocumentsController extends Controller
 	 */
 	public function actionView($id)
 	{
+		$params = $this->loadModel($id);
 		$this->render('view',array(
-			'model'=>$this->loadModel($id),
-		));
+				'model'=>$params,
+			));
 	}
 
 	/**
@@ -84,23 +86,38 @@ class DocumentsController extends Controller
 	 * If update is successful, the browser will be redirected to the 'view' page.
 	 * @param integer $id the ID of the model to be updated
 	 */
+
+
 	public function actionUpdate($id)
 	{
 		$model=$this->loadModel($id);
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
-
+		if($model->user_id!=Yii::app()->user->id&&Yii::app()->user->role!='administrator')
+		{
+			$this->redirect(array('index'));
+		}
 		if(isset($_POST['Documents']))
 		{
+			$_POST['Documents']['state'] = 'Save';
 			$model->attributes=$_POST['Documents'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
 
-		$this->render('update',array(
-			'model'=>$model,
-		));
+		if($model->state=='Access'||Yii::app()->user->role=='administrator')
+		{
+			$this->render('update',array(
+				'model'=>$model,
+			));
+		}
+		else
+		{
+			$this->render('view',array(
+				'model'=>$model,
+			));
+		}
 	}
 
 	/**
@@ -122,7 +139,16 @@ class DocumentsController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Documents');
+		if(Yii::app()->user->role!='administrator')
+		{
+			$criteria=new CDbCriteria();
+			$criteria->addInCondition('user_id',array(Yii::app()->user->id));
+			$dataProvider = Documents::model()->findAll($criteria);
+		}
+		else
+		{
+			$dataProvider = Documents::model()->findAll();
+		}
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
