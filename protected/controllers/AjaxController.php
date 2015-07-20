@@ -124,4 +124,19 @@ class AjaxController extends Controller
 		}
 		return false;
 	}
+	public function actionChangeCity()
+	{
+		if($_REQUEST['area_id'])
+		{
+			$city = City::model()->findAllByAttributes(array('area_id'=>$_REQUEST['area_id']));
+			$city_arr = CHtml::listData($city,'id','name');
+			$res = "";
+			foreach($city_arr AS $key=>$val)
+			{
+				$res .= "<option value='".$key."'>".$val."</option>";
+			}
+			echo $res;
+		}
+		echo false;
+	}
 }

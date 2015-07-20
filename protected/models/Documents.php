@@ -34,8 +34,10 @@ class Documents extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
+			array('amount, contribution, need', 'numerical', 'integerOnly'=>true),
 			array('name, city, area, amount, contribution, need, analysis, state', 'required'),
-			array('name, city, area', 'length', 'max'=>200),
+			array('name', 'length', 'max'=>200),
+			array('city, area', 'length', 'max'=>20),
 			array('amount, contribution, need', 'length', 'max'=>50),
 			array('state', 'length', 'max'=>7),
 			// The following rule is used by search().
@@ -53,6 +55,8 @@ class Documents extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'reqs' => array(self::HAS_MANY, 'Requests', 'id'),
+			'area' => array(self::BELONGS_TO, 'Area', 'area'),
+			'city' => array(self::BELONGS_TO, 'City', 'city'),
 		);
 	}
 

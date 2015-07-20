@@ -2,6 +2,12 @@
 /* @var $this DocumentsController */
 /* @var $model Documents */
 /* @var $form CActiveForm */
+
+$area_checkbox = Area::model()->findAll();
+if($model->area->id)
+	$city_checkbox = City::model()->findAllByAttributes(array('area_id'=>$model->area->id));
+else
+	$city_checkbox = City::model()->findAllByAttributes(array('area_id'=>$model->area));
 ?>
 
 
@@ -41,32 +47,32 @@
 
 	<div class="form-group col-sm-12">
 		<?php echo $form->labelEx($model,'area',array('class'=>'control-label')); ?>
-		<?php echo $form->textField($model,'area',array('maxlength'=>200,'class'=>'form-control')); ?>
+		<?php echo $form->dropDownList($model,'area',CHtml::listData($area_checkbox,'id','name'),array('maxlength'=>200,'class'=>'form-control','id'=>'change-area')); ?>
 		<?php echo $form->error($model,'area',array('style'=>'color:red')); ?>
 	</div>
 	<br>
 	<div class="form-group col-sm-12">
 		<?php echo $form->labelEx($model,'city',array('class'=>'control-label')); ?>
-		<?php echo $form->textField($model,'city',array('maxlength'=>200,'class'=>'form-control')); ?>
+		<?php echo $form->dropDownList($model,'city',CHtml::listData($city_checkbox,'id','name'),array('maxlength'=>200,'class'=>'form-control','id'=>'change-city')); ?>
 		<?php echo $form->error($model,'city',array('style'=>'color:red')); ?>
 	</div>
 	
 	
 	<div class="form-group col-sm-4">
 		<?php echo $form->labelEx($model,'amount',array('class'=>'control-label')); ?>
-		<?php echo $form->textField($model,'amount',array('maxlength'=>50,'class'=>'form-control')); ?>
+		<?php echo $form->textField($model,'amount',array('maxlength'=>50,'class'=>'form-control change-need','id'=>'change-amount')); ?>
 		<?php echo $form->error($model,'amount',array('style'=>'color:red')); ?>
 	</div>
 	
 	<div class="form-group col-sm-4">
 		<?php echo $form->labelEx($model,'contribution',array('class'=>'control-label')); ?>
-		<?php echo $form->textField($model,'contribution',array('maxlength'=>50,'class'=>'form-control')); ?>
+		<?php echo $form->textField($model,'contribution',array('maxlength'=>50,'class'=>'form-control change-need','id'=>'change-contribution')); ?>
 		<?php echo $form->error($model,'contribution',array('style'=>'color:red')); ?>
 	</div>
 	
 	<div class="form-group col-sm-4">
 		<?php echo $form->labelEx($model,'need',array('class'=>'control-label')); ?>
-		<?php echo $form->textField($model,'need',array('maxlength'=>50,'class'=>'form-control')); ?>
+		<?php echo $form->textField($model,'need',array('maxlength'=>50,'class'=>'form-control change-need','id'=>'change-need')); ?>
 		<?php echo $form->error($model,'need',array('style'=>'color:red')); ?>
 	</div>
 	
@@ -85,3 +91,28 @@
 <?php $this->endWidget(); ?>
 	</div>
 </div>
+<script>
+$(document).ready(function(){
+	$(".change-need").keyup(function(){
+		var sum;
+		sum = $("#change-amount").val()-$("#change-contribution").val();
+		$("#change-need").val(sum);
+	});
+	$("#change-area").change(function(){
+		$("#change-area").attr("disabled",true);
+		$("#change-city").attr("disabled",true);
+		$.ajax({
+			type: "POST",
+			url: "<?php echo Yii::app()->getBaseUrl(true).Yii::app()->createUrl('ajax/changecity');?>",
+			data: {'area_id': $("#change-area").val()},
+		}).done(function(data){
+			if(data!=false)
+			{
+				$("#change-city").html(data);
+			}
+			$("#change-area").attr("disabled",false);
+			$("#change-city").attr("disabled",false);
+		});
+	});
+});
+</script>
