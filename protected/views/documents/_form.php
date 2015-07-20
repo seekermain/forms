@@ -4,8 +4,8 @@
 /* @var $form CActiveForm */
 
 $area_checkbox = Area::model()->findAll();
-if($model->area->id)
-	$city_checkbox = City::model()->findAllByAttributes(array('area_id'=>$model->area->id));
+if($model->isNewRecord)
+	$city_checkbox = City::model()->findAllByAttributes(array('area_id'=>$area_checkbox[0]->id));
 else
 	$city_checkbox = City::model()->findAllByAttributes(array('area_id'=>$model->area));
 ?>
