@@ -103,7 +103,12 @@ class DocumentsController extends Controller
 			$_POST['Documents']['state'] = 'Save';
 			$model->attributes=$_POST['Documents'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+			{
+				if(Yii::app()->user->role=='administrator')
+					$this->redirect(array('update','id'=>$model->id));
+				else
+					$this->redirect(array('view','id'=>$model->id));
+			}
 		}
 
 		if($model->state=='Access'||Yii::app()->user->role=='administrator')
