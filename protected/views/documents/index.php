@@ -14,9 +14,7 @@ $atts = Documents::model();
 ?>
 
 <h1>Заявки</h1>
-<a href="<?php echo Yii::app()->createUrl('documents/create');?>">
-<button type="button" class="btn btn-primary btn-lg">Добавить заявку</button>
-</a>
+<a href="<?php echo Yii::app()->createUrl('documents/create');?>" class="btn btn-primary btn-lg">Добавить заявку</a>
 <br>
 <div class="row">
 	<div class="col-xs-12">

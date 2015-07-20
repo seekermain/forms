@@ -13,6 +13,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Create Area</h1>
+<h1>Районы</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

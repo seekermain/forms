@@ -50,6 +50,18 @@
 										</a>
 									</li>
 									<li>
+										<a href="<?php echo Yii::app()->createUrl('area/admin');?>">
+											<i class="fa fa-list"></i>
+											<span>Районы</span>
+										</a>
+									</li>
+									<li>
+										<a href="<?php echo Yii::app()->createUrl('city/admin');?>">
+											<i class="fa fa-list"></i>
+											<span>Города</span>
+										</a>
+									</li>
+									<li>
 										<a href="<?php echo Yii::app()->createUrl('user/admin');?>">
 											<i class="fa fa-users"></i>
 											<span>Пользователи</span>

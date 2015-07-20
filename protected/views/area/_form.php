@@ -4,8 +4,12 @@
 /* @var $form CActiveForm */
 ?>
 
-<div class="form">
-
+<div class="box">
+	<div class="box-content">
+		<div class="text-center">
+			<h3 class="page-header">Добавление района</h3>
+			<p class="note">Поля отмеченные <span class="required">*</span> обязательны для заполнения.</p>
+		</div>
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'area-form',
 	// Please note: When you enable ajax validation, make sure the corresponding
@@ -19,14 +23,14 @@
 
 	<?php echo $form->errorSummary($model); ?>
 
-	<div class="row">
+	<div class="form-group col-sm-12">
 		<?php echo $form->labelEx($model,'name'); ?>
-		<?php echo $form->textField($model,'name',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->textField($model,'name',array('size'=>60,'maxlength'=>100,'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'name'); ?>
 	</div>
 
-	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+	<div class="text-center">
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Создать' : 'Сохранить',array('class'=>'btn btn-success')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
