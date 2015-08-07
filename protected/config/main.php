@@ -60,6 +60,7 @@ return array(
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
 		),
+
 		
 
 		// database settings are configured in database.php

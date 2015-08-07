@@ -14,7 +14,7 @@ else
 <div class="box">
 	<div class="box-content">
 		<div class="text-center">
-			<h3 class="page-header">Форма заявки</h3>
+			<h3 class="page-header">Форма заявки <?php echo Yii::app()->getBaseUrl(true)?></h3>
 			<p class="note">Поля отмеченные <span class="required">*</span> обязательны для заполнения.</p>
 		</div>
 	<?php if(!$model->isNewRecord):?>
@@ -103,7 +103,7 @@ $(document).ready(function(){
 		$("#change-city").attr("disabled",true);
 		$.ajax({
 			type: "POST",
-			url: "<?php echo Yii::app()->getBaseUrl(true).Yii::app()->createUrl('ajax/changecity');?>",
+			url: "<?php echo Yii::app()->createUrl('/ajax/changeCity');?>",
 			data: {'area_id': $("#change-area").val()},
 		}).done(function(data){
 			if(data!=false)

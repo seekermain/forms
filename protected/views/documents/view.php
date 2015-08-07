@@ -139,7 +139,7 @@ $(document).ready(function(){
 		$("#send_request").attr("disabled",true);
 		$.ajax({
 			type: "POST",
-			url: "<?php echo Yii::app()->getBaseUrl(true).Yii::app()->createUrl('ajax/request');?>",
+			url: "<?php echo Yii::app()->createUrl('ajax/request');?>",
 			data: {'doc_id':'<?php echo $model->id;?>', 'comment':$(".devoops-modal-inner-textarea").val()},
 		}).done(function(data){
 			var a;
