@@ -55,8 +55,8 @@ class Documents extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'reqs' => array(self::HAS_MANY, 'Requests', 'id'),
-			'area' => array(self::BELONGS_TO, 'Area', 'area'),
-			'city' => array(self::BELONGS_TO, 'City', 'city'),
+			'areas' => array(self::BELONGS_TO, 'Area', 'area'),
+			'cities' => array(self::BELONGS_TO, 'City', 'city'),
 		);
 	}
 
@@ -69,8 +69,8 @@ class Documents extends CActiveRecord
 			'id' => 'Номер заявки',
 			'user_id' => 'ID пользователя',
 			'name' => 'Название заявки',
-			'city' => 'Город',
-			'area' => 'Район',
+			'city' => 'Города районного подчинения и айыл окмоту',
+			'area' => 'Районы и города республиканского и областного подчинения',
 			'amount' => 'Стоимость',
 			'contribution' => 'Совклад',
 			'need' => 'Потребность',

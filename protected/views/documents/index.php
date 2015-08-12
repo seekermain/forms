@@ -59,8 +59,8 @@ $atts = Documents::model();
 						<tr>
 							<td><a href="<?php echo Yii::app()->createUrl('documents/update',array('id'=>$data->id))?>"><?php echo $data->id?></a></td>
 							<td><?php echo $data->datetime?></td>
-							<td><?php echo $data->area?></td>
-							<td><?php echo $data->city?></td>
+							<td><?php echo $data->areas->name?></td>
+							<td><?php echo $data->cities->name?></td>
 							<td><?php echo $data->name?></td>
 							<td><?php echo $data->amount?></td>
 							<td><?php echo $data->contribution?></td>

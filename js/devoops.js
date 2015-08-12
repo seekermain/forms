@@ -99,7 +99,8 @@ function LoadDataTablesScripts(callback){
 		});
 	}
 	if (!$.fn.dataTables){
-		LoadDatatables();
+		//LoadDatatables();
+		callback();
 	}
 	else {
 		if (callback && typeof(callback) === "function") {

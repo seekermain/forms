@@ -100,6 +100,9 @@
 <script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/plugins/tinymce/tinymce.min.js"></script>
 <script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/plugins/tinymce/jquery.tinymce.min.js"></script>
 <script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/plugins/datatables/jquery.dataTables.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/plugins/datatables/ZeroClipboard.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/plugins/datatables/TableTools.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/plugins/datatables/dataTables.bootstrap.js"></script>
 <!-- All functions for this theme + document.ready processing -->
 <script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/devoops.js"></script>
 <?php endif?>
