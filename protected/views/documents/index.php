@@ -89,6 +89,58 @@ $atts = Documents::model();
 		</div>
 	</div>
 </div>
+
+
+<style>
+
+    @media print {
+
+        @page {size:landscape}
+        a:link:after, a:visited:after {content:"";font-size:90%;}
+
+        header{
+            display: none;
+        }
+        .btn {
+            display: none;
+        }
+
+        .box .box-header{
+            display: none;
+        }
+
+        .container{
+            width: 100%;
+        }
+
+        #datatable-2_wrapper > .box-content{
+            display: none;
+        }
+
+        #datatable-2{
+            display: block;
+            font-size: 12px;
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+        }
+
+        #datatable-2 th{
+            background: none;
+            padding: 2px;
+        }
+
+        #datatable-2.table-datatable .sorting{
+            background: none;
+            padding: 2px;
+        }
+
+        #datatable-2 input{
+            display: none;
+        }
+    }
+</style>
+
+
 <script type="text/javascript">
 // Run Datables plugin and create 3 variants of settings
 function AllTables(){

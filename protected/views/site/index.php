@@ -134,6 +134,8 @@ $this->pageTitle=Yii::app()->name;
 	</div>
 </div>
 
+
+
 <script type="text/javascript">
 // Run Datables plugin and create 3 variants of settings
 function AllTables(){
@@ -148,7 +150,7 @@ function MakeSelect2(){
 	});
 }
 $(document).ready(function() {
-	// Load Datatables and run plugin on tables 
+	// Load Datatables and run plugin on tables
 	LoadDataTablesScripts(AllTables);
 	// Add Drag-n-Drop feature
 	WinMove();
